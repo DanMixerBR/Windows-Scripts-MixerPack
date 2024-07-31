@@ -1,2 +1,3 @@
 # Windows-Scripts-Pack
-Teste
+
+Batch and PowerShell script packages to automate processes on Windows.
