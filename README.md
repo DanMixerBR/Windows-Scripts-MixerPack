@@ -1,6 +1,8 @@
 # Windows Scripts Pack
 
-Collection of BAT and PowerShell scripts to automate processes in Windows. There are **20 scripts** in total, 16 scripts to run in any environment and 4 scripts for corporate environments. See below which scripts are and their functionalities.
+Collection of BAT and PowerShell scripts to automate processes in Windows. There are **20 scripts** in total, 16 scripts to run in any environment and 4 scripts for corporate environments.
+
+See below which scripts are and their functionalities.
 
 **Scripts for any environment:**
 
