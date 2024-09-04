@@ -7,7 +7,7 @@ Scripts for any environment:
 - "Clear cache.bat" clears the TEMP folder and restarts Windows Explorer. It can fix problems such as frozen taskbar and system slowness;
 - "Driver Installer.bat" and "Driver Uninstaller.bat" install and uninstall system drivers;
 - "Fix Keyboard.bat" enables the CTF Loader and fixes keyboard freezing when typing;
-- "Fix Microsoft Outlook.bat" restores Outlook to its factory settings. It can fix problems such as frozen mailbox and infinite loading;
+- "Fix Microsoft Outlook.bat" restores Outlook to its factory settings. Can fix startup issues and crashes when loading new messages;
 - "Fix Num Lock key.bat" enables the Num Lock key and configures the system so that the key is enabled at startup;
 - "Fix Office 365.bat" performs a quick repair of Microsoft Office without having to open the Control Panel;
 - "Fix Office 2016.bat" updates Microsoft Office to an older version, fixing license error messages;
