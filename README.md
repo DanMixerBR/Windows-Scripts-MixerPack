@@ -4,7 +4,7 @@ Collection of BAT and PowerShell scripts to automate processes in Windows. There
 
 Scripts for any environment:
 
-- "Clear cache.bat" clears the TEMP folder and restarts Windows Explorer. It can fix frozen taskbar and system slowness;
+- "Clear cache.bat" clears the TEMP folder and restarts Windows Explorer. It can fix many issues like frozen taskbar and system slowness;
 - "Driver Installer.bat" and "Driver Uninstaller.bat" install and uninstall system drivers;
 - "Fix Keyboard.bat" enables the CTF Loader and fixes keyboard freezing when typing;
 - "Fix Microsoft Outlook.bat" restores Outlook to its factory settings. Can fix startup issues and crashes when loading new messages;
