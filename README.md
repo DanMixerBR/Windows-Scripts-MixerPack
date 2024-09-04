@@ -13,7 +13,7 @@ Scripts for any environment:
 - "Fix Windows Time Zone.bat" enables and synchronizes Windows time, fixing issues like "Time synchronization failed";
 - "HD Repair.bat" scans and repairs errors on hard disk drive (HDD);
 - "PC Info.bat" displays system and hardware information, including IP, hostname, and service tag;
-- "Ping IP or website.bat" tests your computer's connectivity to an IP address or website;
+- "Ping IP or website.bat" tests computer's connectivity to an IP address or website;
 - "Reset network.bat" restarts the network adapter, renews the IP address, clears the DNS cache, and updates group policies. It can fix issues like slow loading of web pages;
 - "Restore Win10 Context Menu.bat" restores the appearance of the Windows 10 Context Menu in Windows 11; - "System repair.bat" uses the DISM and SFC tools to scan and repair system files that may be missing or corrupted; - "Windows Program Update v2.bat" updates Windows programs and applications quickly and easily;
 
