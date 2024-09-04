@@ -11,7 +11,7 @@ Scripts for any environment:
 - "Fix Office 365.bat" performs a quick repair of Microsoft Office, without the need to open the Control Panel;
 - "Fix Office 2016.bat" updates Microsoft Office to an older version, fixing license error messages;
 - "Fix Windows Time Zone.bat" enables and synchronizes Windows time, fixing issues like "Time synchronization failed";
-- "HD Repair.bat" scans and repairs errors on your hard disk drive (HDD);
+- "HD Repair.bat" scans and repairs errors on hard disk drive (HDD);
 - "PC Info.bat" displays system and hardware information, including IP, hostname, and service tag;
 - "Ping IP or website.bat" tests your computer's connectivity to an IP address or website;
 - "Reset network.bat" restarts the network adapter, renews the IP address, clears the DNS cache, and updates group policies. It can fix issues like slow loading of web pages;
