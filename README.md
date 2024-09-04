@@ -12,13 +12,13 @@ Scripts for any environment:
 - "Fix Office 365.bat" performs a quick repair of Microsoft Office without having to open the Control Panel;
 - "Fix Office 2016.bat" updates Microsoft Office to an older version, fixing license error messages;
 - "Fix Windows Time Zone.bat" enables and synchronizes Windows time, fixing issues such as "Time synchronization failed";
-- "HD Repair.bat" scans and repairs hard disk drive (HDD) errors;
+- "HD Repair.bat" checks and repairs errors on hard disk drive (HDD);
 - "PC Info.bat" displays system and hardware information, including IP, hostname, and service tag;
 - "Ping IP or website.bat" tests your computer's connectivity to an IP address or website;
-- "Reset network.bat" restarts the network adapter, renews the IP address, clears the DNS cache, and updates group policies. It can fix slow-loading web pages;
+- "Reset network.bat" restarts the network adapter, renews the IP address, clears the DNS cache, and updates group policies. It can improve the loading of web pages;
 - "Restore Win10 Context Menu.bat" restores the appearance of the Windows 10 Context Menu in Windows 11;
 - "System repair.bat" uses the DISM and SFC tools to scan and repair system files that may be missing or corrupt;
-- "Windows Program Update v2.bat" updates Windows programs and applications quickly and easily;
+- "Windows Program Update v2.bat" updates Windows programs and applications quickly and easily.
 
 Scripts for corporate environments:
 
