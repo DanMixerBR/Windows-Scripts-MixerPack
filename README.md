@@ -1,8 +1,8 @@
 # Windows Scripts Pack
 
-Collection of BAT and PowerShell scripts to automate processes in Windows. There are 20 scripts in total, 16 scripts to run in any environment and 4 scripts for corporate environments. See below which scripts are and their functionalities.
+Collection of BAT and PowerShell scripts to automate processes in Windows. There are **20 scripts** in total, 16 scripts to run in any environment and 4 scripts for corporate environments. See below which scripts are and their functionalities.
 
-Scripts for any environment:
+**Scripts for any environment:**
 
 - "Clear cache.bat" clears the TEMP folder and restarts Windows Explorer. It can fix many issues like frozen taskbar and system slowness;
 - "Driver Installer.bat" and "Driver Uninstaller.bat" install and uninstall system drivers;
@@ -20,7 +20,7 @@ Scripts for any environment:
 - "System repair.bat" uses the DISM and SFC tools to scan and repair system files that may be missing or corrupt;
 - "Windows Program Update v2.bat" updates Windows programs and applications quickly and easily.
 
-Scripts for corporate environments:
+**Scripts for corporate environments:**
 
 - "Check Windows password validity v2.bat" checks the validity of the Windows password using the username;
 - "Check Windows password validity by date v2.ps1" checks the validity of the password of all AD (Active Directory) users using dates;
