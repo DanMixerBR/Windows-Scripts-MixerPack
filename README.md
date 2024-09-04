@@ -22,7 +22,7 @@ Collection of BAT and PowerShell scripts to automate processes in Windows. There
 
 **Scripts for corporate environments:**
 
-- "Check Windows password validity v2.bat" checks the validity of the Windows password using the username;
-- "Check Windows password validity by date v2.ps1" checks the validity of the password of all AD (Active Directory) users using dates;
-- "AD users with lifetime password.ps1" displays a list of all AD users who have a lifetime password;
-- "Users configured to [Change password at next logon].ps1" displays a list of all AD users who are configured to change their password at the next logon.
+- "Check Windows Password Expiration v2.bat" checks the validity of the Windows password using the username;
+- "Check Windows Password Expiration [by date].ps1" checks the validity of the password of all AD (Active Directory) users using dates;
+- "AD Users with [Password never expires].ps1" displays a list of all AD users who have a lifetime password;
+- "AD Users with [User must change password].ps1" displays a list of all AD users who are configured to change their password at the next logon.
