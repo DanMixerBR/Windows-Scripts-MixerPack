@@ -16,11 +16,11 @@ if ((Test-Admin) -eq $false) {
 Set-ExecutionPolicy Unrestricted
 cls
 
-$Host.UI.RawUI.WindowTitle = 'Check Windows Password Expiration [by date]'
+$Host.UI.RawUI.WindowTitle = 'AD Users Creator'
 $Host.UI.RawUI.BackgroundColor = ($bckgrnd = 'Black')
 cls
 Write-Host ======================================================================================================================
-Write-Host *** Check Windows Password Expiration [by date] *** by DanMixerBR
+Write-Host *** AD Users Creator v3 *** by DanMixerBR
 Write-Host ======================================================================================================================
 Write-Host
 Write-Host Domain: $env:USERDNSDOMAIN
@@ -28,14 +28,42 @@ Write-Host
 Write-Host ======================================================================================================================
 Write-Host
 
-while ($true) {
-$datetime = Read-Host -Prompt 'Insert date'
+Set-ADDefaultDomainPasswordPolicy -Identity $env:USERDNSDOMAIN -ComplexityEnabled $false
+
+$csvfile = Read-Host -Prompt 'Insert CSV file name'
+$csvpath = "$csvfile"
 Write-Host
 
-Get-ADUser -filter {Enabled -eq $True -and PasswordNeverExpires -eq $False} –Properties "DisplayName", "msDS-UserPasswordExpiryTimeComputed" |
-Select-Object -Property "SamAccountName","Displayname",@{Name="ExpiryDate";Expression={[datetime]::FromFileTime($_."msDS-UserPasswordExpiryTimeComputed")}} | Sort-Object -Property "DisplayName" | findstr /C:Displayname /C:ExpiryDate /C:- /C:$datetime
+$oupath = Read-Host -Prompt 'Insert OU path'
+$infodomain = Get-ADDomain | Select-Object -ExpandProperty DistinguishedName
+Write-Host
+
+$userdata = Import-Csv $csvpath -Delimiter ";"
+
+foreach ($user in $userdata) {
+
+$username = $user.MAC
+$description = $user.Description
+$password = $user.MAC
+
+New-ADUser `
+    -Name $username `
+    -SamAccountName $username `
+    -GivenName $username `
+    -DisplayName $username `
+    -UserPrincipalName $username@$env:USERDNSDOMAIN `
+    -Description $description `
+    -Path "$oupath,$infodomain" `
+    -AccountPassword (ConvertTo-SecureString $password -AsPlainText -Force) `
+    -PasswordNeverExpires $true `
+    -CannotChangePassword $true `
+    -Enable $true
+}
+
+Set-ADDefaultDomainPasswordPolicy -Identity $env:USERDNSDOMAIN -ComplexityEnabled $true
+
+Write-Host "Operation completed!"
 Write-Host
 Write-Host ======================================================================================================================
 Write-Host
-continue
-}
+pause

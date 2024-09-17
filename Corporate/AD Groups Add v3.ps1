@@ -16,11 +16,11 @@ if ((Test-Admin) -eq $false) {
 Set-ExecutionPolicy Unrestricted
 cls
 
-$Host.UI.RawUI.WindowTitle = 'Check Windows Password Expiration [by date]'
+$Host.UI.RawUI.WindowTitle = 'AD Groups Add'
 $Host.UI.RawUI.BackgroundColor = ($bckgrnd = 'Black')
 cls
 Write-Host ======================================================================================================================
-Write-Host *** Check Windows Password Expiration [by date] *** by DanMixerBR
+Write-Host *** AD Groups Add v3 *** by DanMixerBR
 Write-Host ======================================================================================================================
 Write-Host
 Write-Host Domain: $env:USERDNSDOMAIN
@@ -29,11 +29,21 @@ Write-Host =====================================================================
 Write-Host
 
 while ($true) {
-$datetime = Read-Host -Prompt 'Insert date'
+$csvfile = Read-Host -Prompt 'Insert CSV file name'
+$csvpath = "$csvfile"
 Write-Host
 
-Get-ADUser -filter {Enabled -eq $True -and PasswordNeverExpires -eq $False} –Properties "DisplayName", "msDS-UserPasswordExpiryTimeComputed" |
-Select-Object -Property "SamAccountName","Displayname",@{Name="ExpiryDate";Expression={[datetime]::FromFileTime($_."msDS-UserPasswordExpiryTimeComputed")}} | Sort-Object -Property "DisplayName" | findstr /C:Displayname /C:ExpiryDate /C:- /C:$datetime
+$groupdata = Import-Csv $csvpath -Delimiter ";"
+
+foreach ($group in $groupdata) {
+
+$username = $group.User
+$groupname = $group.Group
+
+    Add-ADGroupMember -Identity $groupname -Members $username -Verbose
+}
+
+Write-Host "Operation completed!"
 Write-Host
 Write-Host ======================================================================================================================
 Write-Host
