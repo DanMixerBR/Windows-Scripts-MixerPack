@@ -12,7 +12,7 @@ See below which scripts are and their functionalities.
 - "Fix Microsoft Outlook.bat" restores Outlook to its factory settings. Can fix startup issues and crashes when loading new messages;
 - "Fix Num Lock key.bat" enables the Num Lock key and configures the system so that the key is enabled at startup;
 - "Fix Office 365.bat" performs a quick repair of Microsoft Office without having to open the Control Panel;
-- "Fix Office 2016.bat" updates Microsoft Office to an older version, fixing license error messages;
+- "Fix Office License.bat" updates Microsoft Office to an older version, fixing license error messages;
 - "Fix Windows Time Zone.bat" enables and synchronizes Windows time, fixing issues such as "Time synchronization failed";
 - "HD Repair.bat" checks and repairs errors on hard disk drive (HDD);
 - "PC Info.bat" displays system and hardware information, including IP, hostname, and service tag;
