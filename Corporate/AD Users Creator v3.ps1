@@ -42,9 +42,9 @@ $userdata = Import-Csv $csvpath -Delimiter ";"
 
 foreach ($user in $userdata) {
 
-$username = $user.MAC
+$username = $user.User
 $description = $user.Description
-$password = $user.MAC
+$password = $user.User
 
 New-ADUser `
     -Name $username `
