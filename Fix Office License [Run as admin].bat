@@ -1,13 +1,13 @@
 @echo off
-title Fix Office 2016 by DanMixerBR
+title Fix Office License by DanMixerBR
 chcp 65001
 cls
 
 echo ======================================================================================================================
 echo.
-echo [EN] Fixing Microsoft Office 2016. Please wait...
+echo [EN] Fixing Microsoft Office License. Please wait...
 echo.
-echo [PT] Corrigindo o Microsoft Office 2016. Por favor, aguarde...
+echo [PT] Corrigindo a Licença do Microsoft Office. Por favor, aguarde...
 echo.
 
 cd "\Program Files\Common Files\microsoft shared\ClickToRun"
