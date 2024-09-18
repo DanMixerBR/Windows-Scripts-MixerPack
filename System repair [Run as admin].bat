@@ -1,5 +1,5 @@
 @echo off
-title Reparo do sistema
+title System repair
 cls
 echo ======================================================================================================================
 echo  *** System repair [Run as administrator] *** by DanMixerBR
