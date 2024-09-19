@@ -28,9 +28,12 @@ echo  *** HD Zero Fill [Run as administrator] *** by DanMixerBR
 :Start
 echo ======================================================================================================================
 echo.
+wmic logicaldisk get name,size,volumename
+echo ======================================================================================================================
+echo.
 
 echo [EN] Enter the letter of the drive you want to format. Example C, D, E.
-echo [PT] Insira a letra da unidade que você deseja formatar. Exemplo C, D, E.
+echo [PT] Digite a letra da unidade que você deseja formatar. Exemplo C, D, E.
 echo.
 echo ======================================================================================================================
 echo.

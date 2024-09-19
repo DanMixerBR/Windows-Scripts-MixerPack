@@ -6,10 +6,13 @@ echo ===========================================================================
 echo  *** HD Repair [Run as administrator] *** by DanMixerBR
 echo ======================================================================================================================
 echo.
+wmic logicaldisk get name,size,volumename
+echo ======================================================================================================================
+echo.
 
 :Start
 echo [EN] Enter the letter of the drive you want to repair. Example C, D, E.
-echo [PT] Insira a letra da unidade que você deseja reparar. Exemplo C, D, E.
+echo [PT] Digite a letra da unidade que você deseja reparar. Exemplo C, D, E.
 echo.
 echo ======================================================================================================================
 echo.
